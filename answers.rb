@@ -1,4 +1,5 @@
 
+
 # def random_answer
 #   @hash = {1 => 'Yes', 2 =>'Not Likely', 3 => 'I Cannot Say'}
 #   n = 0
