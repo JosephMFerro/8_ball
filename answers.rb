@@ -1,14 +1,25 @@
-
-@answers = [
-  "Certainly",
-  "Unlikely",
-  "I Cannot Say",
-  "lol"
-]
+require 'pry'
 
 def random_answer
-  @answer = @answers[Random.rand(@answers.size)]
-  puts "#{@answer}"
+  @answers = [
+    "Certainly",
+    "Unlikely",
+    "I Cannot Say",
+    "lol"
+  ]
+   answer = @answers[Random.rand(@answers.size)]
+  puts "#{answer}"
 end
 
-random_answer
+def add_answer
+  @answers = [
+    "Certainly",
+    "Unlikely",
+    "I Cannot Say",
+    "lol"
+  ]
+  puts "ADD ANSWER: "
+  @user_answer = gets.to_s.strip
+  @answers << @user_answer
+  puts "#{@answers}"
+end
