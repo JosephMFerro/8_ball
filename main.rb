@@ -1,8 +1,15 @@
 
+<<<<<<< HEAD
 load "answers.rb"
 
 class EightBall
   attr_accessor :ask, :ans
+=======
+
+class EightBall
+  load "answers.rb"
+  attr_accessor :ask, :ans, :answers
+>>>>>>> incorporate randomizer from answers.rb in to main.rb - add method to add answer from user
 
   def initialize
     ask
@@ -10,7 +17,10 @@ class EightBall
 
 
   def ask
+<<<<<<< HEAD
 
+=======
+>>>>>>> incorporate randomizer from answers.rb in to main.rb - add method to add answer from user
     puts "Welcome To The Majic 8 Ball\n Please Ask a question"
     puts "Type quit anytime to exit the session"
     get_question = gets.chomp
