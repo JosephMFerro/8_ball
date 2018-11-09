@@ -16,13 +16,24 @@ class EightBall
         puts "Type quit anytime to exit the session"
         get_question = gets.chomp
         case get_question
-        when "add"
+        when "add_answers"
           add_answer
+          return
         when "quit"
           puts "GOODBYE"
           exit
+        when "print_answers"
+            print_answers
+            return
+          when "reset_answers"
+            $answers.clear
+            $answers = ["Certainly",
+            "Unlikely",
+            "I Cannot Say",
+            "lol"]
         else
           random_answer
+          return
         end
       end
       ask
@@ -37,12 +48,11 @@ EightBall.new
 
 
 
-#- User inputs question X
-# - Computer outputs random answer
-# - User inputs "QUIT" X
-# - Computer outputs a goodbye message and exits
-# - ability to add more answers:
-# - via easter egg question ("add_answers")
+
+
+
+
+
 # - do not let them add the same answer if the eight ball already has that answer
 # - ability to reset answers back to the original bank (hint: think arr.clone)
 # - via easter egg question ("reset_answers")
