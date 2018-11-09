@@ -4,7 +4,11 @@ $answers = [
   "Certainly",
   "Unlikely",
   "I Cannot Say",
-  "lol"
+  "lol",
+  "WRONG",
+  "there is no way to tell..",
+  "Why would you ask that?!",
+  "Very Likely"
 ]
 
 def random_answer

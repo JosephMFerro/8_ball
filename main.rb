@@ -10,10 +10,10 @@ class EightBall
   end
 
   def execution
+    puts "Welcome To The Magic 8 Ball Please Ask a question"
+    puts "Type quit anytime to exit the session"
     loop do
       def ask
-        puts "Welcome To The Majic 8 Ball Please Ask a question"
-        puts "Type quit anytime to exit the session"
         get_question = gets.chomp
         case get_question
         when "add_answers"
